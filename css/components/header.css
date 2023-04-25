@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    width: 100%;
+    padding: 11px 10.1875rem;
+    background-color: #373A3C;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header_links{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-auth{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header_links span input{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: transparent;
+}
+
+.header_links a:first-child{
+    color: #fff;
+}
+

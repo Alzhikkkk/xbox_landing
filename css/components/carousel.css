@@ -1,0 +1,104 @@
+.carousel{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    max-height: 100%;
+    position: relative;
+    
+}
+
+.carousel-slider{
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    position: relative;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel-item{
+    background-image: url('../../assets/starwars.jpg');
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 21.75rem;
+}
+
+.carousel-item>div{
+    display: flex;
+    flex-direction: column;
+    gap: 16.75rem;
+}
+
+.carousel-item--text{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+}
+
+.carousel-item--text h1{
+    font-size: 2.25rem;
+}
+
+.carousel-item--text h4{
+    font-size: 1.5rem;
+}
+
+
+.left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: #8DD83D;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    transform: rotate(180deg);
+    pointer-events: auto;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    content: ">";
+    color: #8DD83D;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    pointer-events: auto;
+}
+
+.carousel-pagination{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-pagination span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #8dd83d;
+}
+
+#one{
+    background-color: #8DD83D;
+}
