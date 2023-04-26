@@ -36,3 +36,14 @@
     color: #fff;
 }
 
+@media (max-width: 1087px) {
+    .header{
+        padding: 11px 1.1875rem;
+    }
+}
+
+@media (max-width: 759px) {
+    .header_links{
+        display: none;
+    }
+}
