@@ -27,6 +27,7 @@
 .footer-top ul li{
     color: #fff;
     font-weight: 400;
+    line-height: 1.5625;
 }
 
 .footer-top ul>div{
@@ -42,4 +43,24 @@
     color: #fff;
     border-top: 1px solid #fff;
     padding-top: 30px;
+}
+
+@media (max-width: 857px) {
+    .footer-top{
+        justify-content: unset;
+        gap: 50px ;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-top{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 427px) {
+    .footer-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
