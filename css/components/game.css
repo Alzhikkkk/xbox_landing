@@ -62,6 +62,7 @@
 .game-video--item{
     width: 70%;
     min-height: 562px;
+    min-width: 420px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -109,4 +110,46 @@
     color: #435766;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 26px;
+}
+
+@media (max-width: 994px) {
+     .game-show--items{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+     }
+
+     .technical-text{
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+     }
+}
+
+
+@media (max-width: 600px) {
+    .technical-text{
+        grid-template-columns: repeat(1, minmax(320px, 1fr));
+    }
+    
+    .game-technical button{
+        margin-top: 20px;
+    }
+
+    .game-info{
+        padding: 100px 10px;
+    }
+
+    .game-show--img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .game-show--img img{
+        min-width: 0px;
+        width: 50%;
+    }
+
+    .game-video--item{
+        min-width: 0;
+        width: 100%;
+    }
 }
